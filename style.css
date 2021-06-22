@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --fixheight:5rem;
+    --fixwidth:5rem;
+}
+body{
+    font-family: sans-serif;
+    background: url(images/hback.png);
+    background-repeat: no-repeat;
+    background-size:  cover;
+    height: 100vh;
+    background-position: 100px -200px;
+}
+li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+nav{
+    display: flex;
+    padding-right: 20rem;
+    align-items: flex-end;
+justify-content:flex-end ;
+    font-size: 1.5rem;
+
+
+}
+.navi{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    color: #fff;
+}
+.classes{
+    font-size: 1.0rem;
+}
+#logo{
+    height: 5rem;
+}
+.boxy{
+    display: flex;
+    flex-direction: column;
+}
+.sublists{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+   margin-top: 1rem;
+   padding: 8rem 0rem 0rem 3rem;
+}
+.subitems{
+    height: var(--fixheight);
+    width: var(--fixwidth);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: solid;
+    margin: 6px;
+}
+.subitems:hover{
+    transition-delay: 1s; /* delays for 1 second */
+-webkit-transition-delay: 1s; /* for Safari & Chrome */
+  box-shadow: -5px 5px #ff5757;
+transform: scale(1.05);  
+transition-delay: 30ms; /* delays for 1 second */
+-webkit-transition-delay: 30ms; /* for Safari & Chrome */  
+}
+.two{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5rem 5rem 0px 0px;
+}
+
+.circle{
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+    border-radius: 50%;
+    animation-name: move_around;
+    animation-duration: 10s;
+}
+@keyframes move_around {
+    0%{
+        top:100px;
+        background-color: red;
+        
+    }
+    10%{
+        background-color: yellow;
+        top:10px;
+    }
+    20%{
+        top:200px;
+
+    }
+    30%{
+        top:300px;
+
+    }
+    40%{
+        top:400px;
+
+    }
+    100%{
+        background-color: green;
+    }
+}
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+@media (max-width:998px) {
+    nav{
+        display: flex;
+        padding: 0 2% 0 0;
+        justify-content: flex-end;
+        /* justify-content: flex-start;
+        padding: 5rem 5% ; */
+    }
+    .boxy{
+        justify-content: space-between;
+        height: 100vh;
+        border: solid;
+    }
+    .sublists{
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    body{
+        background-position: center;
+        height: 15rem;
+        width: 100%;
+    }
+   
+}
