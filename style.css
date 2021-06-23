@@ -44,7 +44,6 @@ a {
   width: 50vw;
   /* margin:0% 0% 0% 30%; */
   height: 50vh;
-  border: solid;
 }
 #name_and_logo {
   display: flex;
@@ -57,7 +56,6 @@ a {
   align-items: center;
   height:50vh;
   width: 100%;
-  border: solid red;
 }
 .sub_navigation {
     margin: 1rem 0rem;
@@ -88,7 +86,6 @@ a {
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
     overflow: hidden;
     background-color: rgb(187, 139, 255)
 
